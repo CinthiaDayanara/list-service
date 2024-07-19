@@ -3,7 +3,7 @@ name: Build and Push Docker image
 on:
   push:
     branches:
-      - main
+      - main 
 
 jobs:
   build:
@@ -28,4 +28,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/userList:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/product-service:latest 
